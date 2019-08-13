@@ -1,0 +1,23 @@
+{
+  "name": "Bantolemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theXtroyer1221/Bantolemo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theXtroyer1221/Bantolemo/issues"
+  },
+  "homepage": "https://github.com/theXtroyer1221/Bantolemo#readme",
+  "dependencies": {
+    "sal.js": "^0.6.1"
+  }
+}
