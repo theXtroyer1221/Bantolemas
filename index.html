@@ -9,12 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <!--Custom css, then javascript libraries-->
-    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css" />
-    <link rel="stylesheet" href="assets/style/style.css" />
     <!-- Bootstrap and font awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!--Custom css, then javascript libraries-->
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css" />
+    <link rel="stylesheet" href="assets/style/style.css" />
   </head>
   <body>
     <!-- Navigation -->
@@ -37,7 +37,7 @@
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Team</a>
@@ -64,11 +64,55 @@
     </header>
 
     <!-- Page Content -->
-    <section class="py-5">
+    <!--NOTE: the services section will be moved;-->
+    <section class="page-section" id="services">
       <div class="container">
-        <h1 class="display-4">Full Page Image Slider</h1>
-        <p class="lead">The background images for the slider are set directly in the HTML using inline CSS. The images in this snippet are from <a href="https://unsplash.com">Unsplash</a>, taken by <a href="https://unsplash.com/@joannakosinska">Joanna Kosinska</a>!</p>
+        <div data-sal="slide-down" data-sal-duration="1200">
+        <h2 class="text-center mt-0">Our services</h2>
+        <hr class="divider my-4">
       </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-cart-plus text-primary mb-4"></i>
+              <h3 class="h4 mb-2">Sturdy quality</h3>
+              <p class="text-muted mb-0">We insure our drone comes in best quality overall. All staging from filming shots</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-user-shield text-primary mb-4"></i>
+              <h3 class="h4 mb-2">High waranty</h3>
+              <p class="text-muted mb-0">All of our dependencies have high low depenency waranty for over 2 years and can be extended.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-shipping-fast text-primary mb-4"></i>
+              <h3 class="h4 mb-2">Fast delivery</h3>
+              <p class="text-muted mb-0">You can start using our products the week you order them, the fast delivery ensure the best output.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
+            <div class="mt-5">
+              <i class="fas fa-4x fa-camera text-primary mb-4"></i>
+              <h3 class="h4 mb-2">A drone's friend</h3>
+              <p class="text-muted mb-0">Is it really a drone without the camera, shooting native raw 4k 60fps. with top quality cameras</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- again this is not the main place for it-->
+    <section class="page-section call-to-action" id="call-to-action">
+   <div class="container">
+     <div class="text-center text-white" data-sal="fade" data-sal-duration="1200">
+     <h2 class="mt-0">Thinking about it?</h2>
+     <hr class="divider d-white my-4">
+     <p class="lead">Give us a call now, and we will start with you right away</p>
+     <a class="btn btn-light mt-4" href="#">Get Started!</a>
+   </div>
+   </div>
     </section>
 
     <!-- Optional JavaScript -->
@@ -81,6 +125,11 @@
     <script src="./node_modules/sal.js/dist/sal.js"></script>
     <script>
       sal();
+
+      sal({
+   threshold: 1,
+   once: false,
+      });
     </script>
   </body>
 </html>
