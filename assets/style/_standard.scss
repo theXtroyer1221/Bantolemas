@@ -1,5 +1,5 @@
 :root {
-  --primary: #2dad67;
+  --primary: #2dad67 !important;
 }
 
 body,
@@ -42,12 +42,26 @@ h6 {
 }
 
 p {
-  font-family: $font2 !important;
+  font-family: $font3 !important;
 }
 
 // bootstrap overide
 .bg-dark {
   background-color: #2f303a !important;
+}
+
+.navbar-brand {
+  font-family: $font2;
+
+  img {
+    margin-right: 5px;
+  }
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 //normal overide such as wrappers

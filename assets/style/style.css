@@ -1,5 +1,5 @@
 :root {
-  --primary: #2dad67;
+  --primary: #2dad67 !important;
 }
 
 body,
@@ -49,5 +49,29 @@ p {
 
 .bg-dark {
   background-color: #2f303a !important;
+}
+
+.navbar-brand {
+  font-family: "Bungee", cursive;
+}
+
+.navbar-brand img {
+  margin-right: 5px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.masthead {
+  height: 66vh;
+  min-height: 500px;
+  background-image: url("Masthead-drone.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
