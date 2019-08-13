@@ -57,11 +57,12 @@ p {
     margin-right: 5px;
   }
 }
-
+.navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active {
   outline: none !important;
   box-shadow: none !important;
+  border-color: transparent !important;
 }
 
 //normal overide such as wrappers

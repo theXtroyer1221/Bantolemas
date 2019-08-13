@@ -59,11 +59,13 @@ p {
   margin-right: 5px;
 }
 
+.navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active {
   outline: none !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+  border-color: transparent !important;
 }
 
 .masthead {
