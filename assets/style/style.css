@@ -78,6 +78,28 @@ hr.divider {
   padding: 7rem 0 !important;
 }
 
+/* width */
+::-webkit-scrollbar {
+  background-color: white;
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .navbar-brand {
   font-family: "Bungee", cursive;
 }
@@ -100,7 +122,7 @@ hr.divider {
 }
 
 .masthead {
-  height: 95vh;
+  height: 100vh;
   min-height: 500px;
   background-image: url("Masthead-drone.jpg");
   background-size: cover;

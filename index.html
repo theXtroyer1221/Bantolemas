@@ -63,7 +63,7 @@
       </div>
     </header>
 
-    <!-- Page content -->
+    <!-- Page Content -->
     <!--NOTE: the services section will be moved;-->
     <section class="page-section" id="services">
       <div class="container">
@@ -126,10 +126,17 @@
     <script>
       sal();
 
-      sal({
-        threshold: 1,
-        once: false
-      });
+      if ($(window).width() < 960) {
+        sal({
+          threshold: 1,
+          once: true
+        });
+      } else {
+        sal({
+          threshold: 1,
+          once: false
+        });
+      }
     </script>
   </body>
 </html>
