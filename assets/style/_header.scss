@@ -1,8 +1,12 @@
 .masthead {
-  height: 66vh;
+  height: 95vh;
   min-height: 500px;
   background-image: url("Masthead-drone.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.call-to-action {
+  background: linear-gradient(180deg, #3300ff 0%, #7000ff 100%);
 }

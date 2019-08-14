@@ -43,6 +43,15 @@ p {
   font-family: "Open Sans", sans-serif !important;
 }
 
+.btn {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+}
+
 .bg-dark {
   background-color: #2f303a !important;
 }
@@ -55,27 +64,22 @@ p {
   color: #2dad67 !important;
 }
 
-hr.divider {
-    max-width: 3.25rem;
-    border-width: .2rem;
-    border-color: #2dad67;
-}
-
 .d-white {
   border-color: white !important;
 }
 
-.page-section {
-    padding: 7rem 0 !important;
+hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: #2dad67;
 }
 
-.btn {
-  padding: 1.25rem 2.25rem;
-    font-size: .85rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 10rem;
+.page-section {
+  padding: 7rem 0 !important;
+}
+
+.navbar-brand {
+  font-family: "Bungee", cursive;
 }
 
 .navbar-brand {
@@ -83,12 +87,7 @@ hr.divider {
 }
 
 .navbar-brand img {
-  margin-right: 10px;
-  transition: all .5s ease-out;
-}
-
-.navbar-brand img:hover {
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .navbar-toggler,
@@ -110,7 +109,7 @@ hr.divider {
 }
 
 .call-to-action {
-  background: linear-gradient(180deg, #3300FF 0%, #7000FF 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3300ff), to(#7000ff));
+  background: linear-gradient(180deg, #3300ff 0%, #7000ff 100%);
 }
-
 /*# sourceMappingURL=style.css.map */
