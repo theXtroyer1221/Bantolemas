@@ -19,6 +19,7 @@
   "homepage": "https://github.com/theXtroyer1221/Bantolemo#readme",
   "dependencies": {
     "jump.js": "^1.0.2",
-    "sal.js": "^0.6.1"
+    "sal.js": "^0.6.1",
+    "smooth-scrollbar": "^8.4.0"
   }
 }
