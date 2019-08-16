@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <!--Custom css, then javascript libraries-->
     <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css" />
-    <link href="dist/smooth-scrollbar.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/smooth-scrollbar.css" />
     <link rel="stylesheet" href="assets/style/style.css" />
   </head>
-  <body>
+  <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="assets/logo.svg" height="50px" alt="logo"/></a>
         <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,10 +29,9 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a id="home" class="nav-link" href="#"
-                >Home
-                <span class="sr-only">(current)</span>
-              </a>
+            <li class="nav-item">
+              <a id="home" class="nav-link active" href="#">Home</a>
+            </li>
             </li>
             <li class="nav-item">
               <a id="about" class="nav-link" href="#">About us</a>
@@ -163,6 +162,55 @@
         </div>
       </div>
     </section>
+
+    <section class="page-section team">
+      <div class="container">
+        <div class="row">
+          <!-- Team Member 1 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Noel Holmes</h5>
+                <div class="card-text text-black-50">project overseer</div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Sherri Ellwood</h5>
+                <div class="card-text text-black-50">Web Developer</div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Kayden Ewing</h5>
+                <div class="card-text text-black-50">Hardware enginner</div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="http://media.virbcdn.com/cdn_images/resize_500x500/99/cceaa6e8d01c5527-denver-wework-unionstation-portrait-corporate.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Jem Fleming</h5>
+                <div class="card-text text-black-50">Dynamic Research Specialist</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
     <!-- again this is not the main place for it-->
     <section class="page-section call-to-action" id="call-to-action">
       <div class="container">
@@ -174,11 +222,6 @@
         </div>
       </div>
     </section>
-
-    <script>
-      Scrollbar.initAll();
-    </script>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap and font awesome JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -186,11 +229,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
     <!--javascript libraries-->
-    <script src="dist/smooth-scrollbar.js"></script>
-
     <script>
-      Scrollbar.initAll();
+      import Scrollbar from "smooth-scrollbar";
+
+      Scrollbar.initAll(options);
     </script>
+
     <script src="./node_modules/sal.js/dist/sal.js"></script>
     <script type="module">
       import jump from "./node_modules/jump.js/dist/jump.module.js";
@@ -213,6 +257,14 @@
 
       about.addEventListener("click", () => {
         jump(".about-us");
+      });
+
+      services.addEventListener("click", () => {
+        jump(".services");
+      });
+
+      team.addEventListener("click", () => {
+        jump(".team");
       });
 
       services.addEventListener("click", () => {
