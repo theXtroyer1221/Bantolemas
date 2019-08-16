@@ -99,8 +99,12 @@ hr.divider {
   background: #555;
 }
 
-.navbar-brand {
-  font-family: "Bungee", cursive;
+.navbar-nav {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700 !important;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
 .navbar-brand {
@@ -127,6 +131,44 @@ hr.divider {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.about-us {
+  padding-bottom: 0 !important;
+}
+
+.about-us .section-header p {
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #556877;
+  width: 50%;
+}
+
+.about-us .about-extra .row {
+  padding-bottom: 60px;
+}
+
+.about-us .about-extra img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-us .about-extra h4 {
+  font-weight: 600;
+  font-size: 24px !important;
+  margin: 0 0 20px 0;
+}
+
+.about-us .about-extra p {
+  margin: 0 0 25px 0;
+}
+
+.services {
+  background-color: #f8f9fa !important;
 }
 
 .call-to-action {

@@ -1,5 +1,9 @@
-.navbar-brand {
-  font-family: "Bungee", cursive;
+.navbar-nav {
+  color: #fff;
+  font-family: $font1;
+  font-weight: 700 !important;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
 .navbar-brand {
@@ -8,6 +12,9 @@
   img {
     margin-right: 5px;
   }
+}
+
+.nav-link {
 }
 
 .navbar-toggler,

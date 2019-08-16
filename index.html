@@ -21,7 +21,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="assets/logo.svg" height="50px" alt="logo" />Bantolemas</a>
+        <a class="navbar-brand" href="#"><img src="assets/logo.svg" height="50px" alt="logo"/></a>
         <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
           <span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span>
         </button>
@@ -35,7 +35,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a id="about" class="nav-link" href="#">About</a>
+              <a id="about" class="nav-link" href="#">About us</a>
             </li>
             <li class="nav-item">
               <a id="services" class="nav-link" href="#services">Services</a>
@@ -67,8 +67,64 @@
       </div>
     </header>
 
-    <!-- Page Content -->
-    <!--NOTE: the services section will be moved;-->
+    <!-- Page main content -->
+    <section class="page-section about-us">
+      <div class="container">
+        <div class="section-header text-center" data-sal="slide-down" data-sal-duration="1200">
+          <h2 class="mt-0">About us</h2>
+          <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae quidem earum aspernatur impedit? Voluptatibus obcaecati velit!</p>
+          <hr class="divider my-4 mb-5" />
+        </div>
+        <div class="about-extra">
+          <div class="row">
+            <div class="col-lg-6" data-sal="slide-right" data-sal-duration="1200" data-sal-easing="ease-out-bounce">
+              <img src="http://www.pngmart.com/files/6/Drone-Background-PNG.png" alt="" />
+            </div>
+            <div class="col-lg-6" data-sal="slide-left" data-sal-duration="1200" data-sal-easing="ease-out-bounce">
+              <h4>A drone company all about machine learning drones, they are the future</h4>
+              <p>
+                Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
+              </p>
+              <p>
+                Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6" data-sal="slide-left" data-sal-duration="1200" data-sal-easing="ease-out-bounce">
+              <h4>Our technology has an extrodenary blazed access to the world of drones</h4>
+              <p>
+                Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
+              </p>
+              <p>
+                Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
+              </p>
+            </div>
+            <div class="col-lg-6" data-sal="slide-right" data-sal-duration="1200" data-sal-easing="ease-out-bounce">
+              <img src="https://www.amlu.com/wp-content/uploads/2016/08/powervisions-poweregg-is-an-ovular-drone-for-the-minimalist-pilot2.png" alt="" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6" data-sal="slide-right" data-sal-duration="1200" data-sal-easing="ease-out-bounce">
+              <img src="https://pngimage.net/wp-content/uploads/2018/06/green-land-png-1.png" alt="" style="margin-top: -25px; border-radius: 5%;" />
+            </div>
+            <div class="col-lg-6" data-sal="slide-left" data-sal-duration="1200" data-sal-easing="ease-out-bounce">
+              <h4>Drones that does not intervine with the nature</h4>
+              <p>
+                Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt.
+              </p>
+              <p>
+                Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
+              </p>
+              <p>
+                Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--services-->
     <section class="page-section services">
       <div class="container">
         <div data-sal="slide-down" data-sal-duration="1200">
@@ -156,7 +212,7 @@
       });
 
       about.addEventListener("click", () => {
-        jump(".masthead");
+        jump(".about-us");
       });
 
       services.addEventListener("click", () => {
@@ -177,8 +233,8 @@
         });
       } else {
         sal({
-          threshold: 1,
-          once: false
+          threshold: 0.5,
+          once: true
         });
       }
     </script>
