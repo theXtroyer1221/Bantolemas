@@ -68,6 +68,10 @@ p {
   border-color: white !important;
 }
 
+.lead {
+  color: #556877;
+}
+
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
@@ -137,15 +141,6 @@ hr.divider {
   padding-bottom: 0 !important;
 }
 
-.about-us .section-header p {
-  text-align: center;
-  margin: auto;
-  margin-top: 15px;
-  font-size: 15px;
-  color: #556877;
-  width: 50%;
-}
-
 .about-us .about-extra .row {
   padding-bottom: 60px;
 }
@@ -165,6 +160,15 @@ hr.divider {
 
 .about-us .about-extra p {
   margin: 0 0 25px 0;
+}
+
+.section-header p {
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #556877;
+  width: 50%;
 }
 
 .services {

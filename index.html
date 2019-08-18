@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <!--Custom css, then javascript libraries-->
+    <script>
+      jQuery(document).ready(function($) {
+        $(".counter").counterUp({
+          delay: 1,
+          time: 1000
+        });
+      });
+    </script>
     <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css" />
     <link rel="stylesheet" href="dist/smooth-scrollbar.css" />
     <link rel="stylesheet" href="assets/style/style.css" />
@@ -28,10 +36,9 @@
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item active"></li>
             <li class="nav-item">
               <a id="home" class="nav-link active" href="#">Home</a>
-            </li>
             </li>
             <li class="nav-item">
               <a id="about" class="nav-link" href="#">About us</a>
@@ -59,7 +66,7 @@
           <div class="row h-100 align-items-center font-weight-bold">
             <div data-sal-duration="1200" data-sal="slide-up" data-sal-delay="700" data-sal-easing="ease-out-bounce" id="masthead-text" class="col-12 text-center text-light">
               <h1 class="display-3">Take it to the skys</h1>
-              <p class="lead">Hey, Vsauce! michael here...</p>
+              <p class="lead text-white">Hey, Vsauce! michael here...</p>
             </div>
           </div>
         </div>
@@ -81,9 +88,7 @@
             </div>
             <div class="col-lg-6" data-sal="slide-left" data-sal-duration="1200" data-sal-easing="ease-out-bounce">
               <h4>A drone company all about machine learning drones, they are the future</h4>
-              <p>
-                Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
-              </p>
+              <div class="counter">1,123,456 downloads</div>
               <p>
                 Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
               </p>
@@ -163,8 +168,13 @@
       </div>
     </section>
 
-    <section class="page-section team">
+    <section class="page-section team" data-sal="slide-up" data-sal-duration="1200">
       <div class="container">
+        <div class="section-header text-center">
+          <h2 class="mt-0">Team</h2>
+          <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <hr class="divider my-4 mb-5" />
+        </div>
         <div class="row">
           <!-- Team Member 1 -->
           <div class="col-xl-3 col-md-6 mb-4">
@@ -211,6 +221,7 @@
       </div>
       <!-- /.container -->
     </section>
+    <section class="clients"></section>
     <!-- again this is not the main place for it-->
     <section class="page-section call-to-action" id="call-to-action">
       <div class="container">
@@ -229,6 +240,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
     <!--javascript libraries-->
+    <script>
+      import counterUp from "counterup2";
+
+      const el = document.querySelector(".counter");
+
+      // Start counting, do this on DOM ready or with Waypoints.
+      counterUp(el, {
+        duration: 1000,
+        delay: 4
+      });
+    </script>
     <script>
       import Scrollbar from "smooth-scrollbar";
 
