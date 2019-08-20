@@ -13,16 +13,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <!--Custom css, then javascript libraries-->
-    <script>
-      jQuery(document).ready(function($) {
-        $(".counter").counterUp({
-          delay: 1,
-          time: 1000
-        });
-      });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css" />
-    <link rel="stylesheet" href="dist/smooth-scrollbar.css" />
+    <script src="./node_modules/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
+    <script src="./node_modules/counterup/counterup.min.js"></script>
     <link rel="stylesheet" href="assets/style/style.css" />
   </head>
   <body id="page-top">
@@ -88,10 +82,31 @@
             </div>
             <div class="col-lg-6" data-sal="slide-left" data-sal-duration="1200" data-sal-easing="ease-out-bounce">
               <h4>A drone company all about machine learning drones, they are the future</h4>
-              <div class="counter">1,123,456 downloads</div>
+              <div id="counter">0</div>
               <p>
                 Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
               </p>
+            </div>
+          </div>
+          <div class="row counters">
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">274</span>
+              <p>Clients</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">421</span>
+              <p>Projects</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">1,364</span>
+              <p>Hours Of Support</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">18</span>
+              <p>Hard Workers</p>
             </div>
           </div>
           <div class="row">
@@ -235,21 +250,20 @@
     </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap and font awesome JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
     <!--javascript libraries-->
     <script>
-      import counterUp from "counterup2";
-
-      const el = document.querySelector(".counter");
-
-      // Start counting, do this on DOM ready or with Waypoints.
-      counterUp(el, {
-        duration: 1000,
-        delay: 4
+      $('[data-toggle="counter-up"]').counterUp({
+        delay: 10,
+        time: 1000
       });
+    </script>
+    <script>
+      var c = new CountUp("counter", 0, 4815);
+
+      c.start();
     </script>
     <script>
       import Scrollbar from "smooth-scrollbar";
