@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/theXtroyer1221/Bantolemo#readme",
   "dependencies": {
-    "sal.js": "^0.6.1"
+    "counterup2": "^1.0.4",
+    "countup.js": "^2.0.4",
+    "jump.js": "^1.0.2",
+    "sal.js": "^0.6.1",
+    "smooth-scrollbar": "^8.4.0",
+    "waypoints": "^4.0.1"
   }
 }
