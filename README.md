@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/theXtroyer1221/Bantolemas) 
+
 # Bantolemo
 
 This is a project of me and a friend where we do a website about a company that do premuim drone order to other companies and this is the landing page for the website. [Read more here](www.google.com)
